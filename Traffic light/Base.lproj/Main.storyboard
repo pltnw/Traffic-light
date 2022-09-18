@@ -41,6 +41,9 @@
                                 <state key="normal" title="Start">
                                     <color key="titleColor" systemColor="systemGray5Color"/>
                                 </state>
+                                <connections>
+                                    <action selector="trafficLightSwitchDidTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="1dJ-cj-zNP"/>
+                                </connections>
                             </button>
                             <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="su7-yE-bMu">
                                 <rect key="frame" x="128.66666666666669" y="280.66666666666669" width="132.66666666666669" height="132.66666666666669"/>
@@ -66,6 +69,12 @@
                             <constraint firstItem="ufi-6D-NW4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j3A-8n-B34"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLight" destination="ufi-6D-NW4" id="m2Q-Iz-Qww"/>
+                        <outlet property="redLight" destination="myz-hI-4mc" id="qIc-LU-HdK"/>
+                        <outlet property="trafficLightSwitch" destination="GHs-oH-sfC" id="2df-gC-wD0"/>
+                        <outlet property="yellowLight" destination="su7-yE-bMu" id="R9X-EP-y8H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
